@@ -1,0 +1,4 @@
+ image:
+   repository: hello-world-java
+   tag: latest
+   pullPolicy: IfNotPresent
