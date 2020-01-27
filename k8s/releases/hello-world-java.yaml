@@ -2,16 +2,16 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: app-name
-  namespace: default
+  name: hello-world-java
+  namespace: demo
   annotations:
     flux.weave.works/automated: "true"
     flux.weave.works/tag.chart-image: glob:master-*
 spec:
-  releaseName: app-name
+  releaseName: hello-world-java
   chart:
-    git: git@github.com:org/repo
-    path: charts/k8s-service
+    git: git@github.com:cakeben/benops
+    path: k8s
     ref: master
   values:
     applicationName: hello-world-java
