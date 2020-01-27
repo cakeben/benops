@@ -11,7 +11,7 @@ spec:
   releaseName: hello-world-java
   chart:
     git: git@github.com:cakeben/benops
-    path: k8s
+    path: k8s/charts
     ref: master
   values:
     applicationName: hello-world-java
